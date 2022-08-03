@@ -25,9 +25,9 @@ def home():
     return render_template('AddEmp.html')
 
 
-@app.route("/about", methods=['POST'])
-def about():
-    return render_template('www.intellipaat.com')
+@app.route("/Our_proposel_document", methods=['POST'])
+def Our_proposel_document():
+    return render_template('https://docs.google.com/document/d/1J-ZpB0XfesVQdQzV2zx8YtEjS02962yCsEVcUSFtxfg/edit?usp=sharing')
 
 
 @app.route("/addemp", methods=['POST'])
