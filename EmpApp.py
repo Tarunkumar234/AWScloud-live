@@ -25,8 +25,8 @@ def home():
     return render_template('AddEmp.html')
 
 
-@app.route("/Our_proposel_document", methods=['POST'])
-def Our_proposel_document():
+@app.route("/about", methods=['POST'])
+def about():
     return render_template('https://docs.google.com/document/d/1J-ZpB0XfesVQdQzV2zx8YtEjS02962yCsEVcUSFtxfg/edit?usp=sharing')
 
 
@@ -81,4 +81,4 @@ def AddEmp():
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.137.1', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=80, debug=True)
